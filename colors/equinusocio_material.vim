@@ -251,10 +251,52 @@ call s:HL('LspWarningText', s:colors.yellow, s:colors.none, s:colors.none)
 call s:HL('LspInformationText', s:colors.orange, s:colors.none, s:colors.none)
 call s:HL('LspHintText', s:colors.cyan, s:colors.none, s:colors.none)
 
-call s:HL('LspErrorHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('LspWarningHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('LspInformationHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('LspHintHighlight', s:colors.none, s:colors.none, s:colors.underline)
+call s:HL('LspErrorHighlight', s:colors.none, s:colors.none, s:colors.undercurl)
+call s:HL('LspWarningHighlight', s:colors.none, s:colors.none, s:colors.undercurl)
+call s:HL('LspInformationHighlight', s:colors.none, s:colors.none, s:colors.undercurl)
+call s:HL('LspHintHighlight', s:colors.none, s:colors.none, s:colors.undercurl)
+
+call s:HL('LspDiagnosticsUnderlineError', s:colors.red, s:colors.none, s:colors.undercurl)
+call s:HL('LspDiagnosticsUnderlineWarning', s:colors.yellow, s:colors.none, s:colors.undercurl)
+call s:HL('LspDiagnosticsUnderlineInformation', s:colors.orange, s:colors.none, s:colors.undercurl)
+call s:HL('LspDiagnosticsUnderlineHint', s:colors.cyan, s:colors.none, s:colors.undercurl)
+
+call s:HL('LspDiagnosticsError', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsWarning', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsInformation', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsHint', s:colors.cyan, s:colors.none, s:colors.none)
+
+hi! link LspDiagnosticsVirtualTextError LspDiagnosticsError
+hi! link LspDiagnosticsVirtualTextWarning LspDiagnosticsWarning
+hi! link LspDiagnosticsVirtualTextInformation LspDiagnosticsInformation
+hi! link LspDiagnosticsVirtualTextHint LspDiagnosticsHint
+
+    "LspReferenceText
+    "LspReferenceRead
+    "LspReferenceWrite
+
+hi! link LspDiagnosticsDefaultError LspDiagnsticsError
+hi! link LspDiagnosticsDefaultWarning LspDiagnsticsWarning
+hi! link LspDiagnosticsDefaultInformation LspDiagnosticsInformation
+hi! link LspDiagnosticsDefaultHint LspDiagnsticsError
+
+call s:HL('LspDiagnosticsError', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsWarning', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsInformation', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('LspDiagnosticsHint', s:colors.cyan, s:colors.none, s:colors.none)
+" ====================================================
+
+" ====================================================
+" vim-gitgutter
+" ----------------------------------------------------
+call s:HL('GitGutterAdd', s:colors.blue, s:colors.none, s:colors.none)
+call s:HL('GitGutterAddLine', s:colors.blue, s:colors.none, s:colors.none)
+call s:HL('GitGutterChange', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('GitGutterChangeLine', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('GitGutterDelete', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('GitGutterDeleteLine', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('GitGutterChangeDelete', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('GitGutterChangeDeleteLine', s:colors.yellow, s:colors.none, s:colors.none)
 " ====================================================
 
 " ====================================================
