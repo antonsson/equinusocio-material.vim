@@ -244,6 +244,15 @@ call s:HL('CocHintHighlight', s:colors.none, s:colors.none, s:colors.underline)
 " ====================================================
 
 " ====================================================
+" Lir
+" ----------------------------------------------------
+call s:HL('LirFloatNormal', s:colors.white, s:colors.none, s:colors.none)
+call s:HL('LirDir', s:colors.blue, s:colors.none, s:colors.none)
+call s:HL('LirSymLink', s:colors.cyan, s:colors.none, s:colors.none)
+call s:HL('LirEmptyDirText', s:colors.blue, s:colors.none, s:colors.none)
+" ====================================================
+
+" ====================================================
 " vim-lsp
 " ----------------------------------------------------
 call s:HL('LspErrorText', s:colors.red, s:colors.none, s:colors.none)
