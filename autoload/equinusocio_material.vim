@@ -16,7 +16,7 @@ endif
 
 if s:style == 'darker'
   let s:colors.black_br = '#747474'
-  let s:colors.background = '#212121'
+  let s:colors.background = '#161616'
   let s:colors.background_lighter = '#2f2f2f'
   let s:colors.cursor_guide = '#42565a'
   let s:colors.selection = '#454545'
