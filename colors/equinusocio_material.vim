@@ -68,10 +68,10 @@ call s:HL('CursorLine', s:colors.none, s:colors.cursor_guide, s:colors.none)
 " ----------------------------------------------------
 call s:HL('Directory', s:colors.cyan, s:colors.none, s:colors.none)
 " ----------------------------------------------------
-" call s:HL('DiffAdd', s:colors.green, s:colors.none, s:colors.none)
-" call s:HL('DiffChange', s:colors.yellow, s:colors.none, s:colors.none)
-" call s:HL('DiffDelete', s:colors.red, s:colors.none, s:colors.none)
-" call s:HL('DiffText', s:colors.magenta, s:colors.none, s:colors.none)
+call s:HL('DiffAdd', s:colors.green, s:colors.none, s:colors.none)
+call s:HL('DiffChange', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('DiffDelete', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('DiffText', s:colors.magenta, s:colors.none, s:colors.none)
 call s:HL('DiffAdd', s:colors.black, s:colors.green, s:colors.none)
 call s:HL('DiffChange', s:colors.black, s:colors.yellow, s:colors.none)
 call s:HL('DiffDelete', s:colors.black, s:colors.red, s:colors.none)
@@ -171,76 +171,6 @@ call s:HL('Underlined', s:colors.none, s:colors.none, s:colors.underline)
 call s:HL('Ignore', s:colors.none, s:colors.none, s:colors.none)
 call s:HL('Error', s:colors.red, s:colors.none, s:colors.none)
 call s:HL('Todo', s:colors.orange, s:colors.none, s:colors.none)
-" ====================================================
-
-
-" ====================================================
-" ale
-" ----------------------------------------------------
-call s:HL('ALEError', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('ALEWarning', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('ALEInfo', s:colors.none, s:colors.none, s:colors.underline)
-
-call s:HL('ALEErrorSign', s:colors.red, s:colors.none, s:colors.none)
-call s:HL('ALEWarningSign', s:colors.yellow, s:colors.none, s:colors.none)
-call s:HL('ALEInfoSign', s:colors.cyan, s:colors.none, s:colors.none)
-" ====================================================
-
-
-" ====================================================
-" echodoc
-" ----------------------------------------------------
-call s:HL('EchoDocFloat', s:colors.foreground, s:colors.float_bg, s:colors.none)
-call s:HL('EchoDocPopup', s:colors.foreground, s:colors.float_bg, s:colors.none)
-" ====================================================
-
-
-" ====================================================
-" coc.nvim
-" ----------------------------------------------------
-call s:HL('CocErrorSign', s:colors.red, s:colors.none, s:colors.none)
-call s:HL('CocWarningSign', s:colors.yellow, s:colors.none, s:colors.none)
-call s:HL('CocInfoSign', s:colors.orange, s:colors.none, s:colors.none)
-call s:HL('CocHintSign', s:colors.cyan, s:colors.none, s:colors.none)
-
-call s:HL('CocFloating', s:colors.foreground, s:colors.float_bg, s:colors.none)
-call s:HL('CocErrorFloat', s:colors.red, s:colors.float_bg, s:colors.none)
-call s:HL('CocWarningFloat', s:colors.yellow, s:colors.float_bg, s:colors.none)
-call s:HL('CocInfoFloat', s:colors.orange, s:colors.float_bg, s:colors.none)
-call s:HL('CocHintFloat', s:colors.cyan, s:colors.float_bg, s:colors.none)
-
-" --- not found in coc.nvim doc ---
-" call s:HL('CocDiagnosticsError', s:colors.red, s:colors.none, s:colors.none)
-" call s:HL('CocDiagnosticsWarning', s:colors.yellow, s:colors.none, s:colors.none)
-" call s:HL('CocDiagnosticsInfo', s:colors.yellow, s:colors.none, s:colors.none)
-" call s:HL('CocDiagnosticsHint', s:colors.cyan, s:colors.none, s:colors.none)
-
-call s:HL('CocErrorHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('CocWarningHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('CocInfoHighlight', s:colors.none, s:colors.none, s:colors.underline)
-call s:HL('CocHintHighlight', s:colors.none, s:colors.none, s:colors.underline)
-
-" ----------- gruvbox coc.nvim ---------
-" hi! link CocErrorSign GruvboxRedSign
-" hi! link CocWarningSign GruvboxOrangeSign
-" hi! link CocInfoSign GruvboxYellowSign
-" hi! link CocHintSign GruvboxBlueSign
-" hi! link CocErrorFloat GruvboxRed
-" hi! link CocWarningFloat GruvboxOrange
-" hi! link CocInfoFloat GruvboxYellow
-" hi! link CocHintFloat GruvboxBlue
-" hi! link CocDiagnosticsError GruvboxRed
-" hi! link CocDiagnosticsWarning GruvboxOrange
-" hi! link CocDiagnosticsInfo GruvboxYellow
-" hi! link CocDiagnosticsHint GruvboxBlue
-
-" hi! link CocSelectedText GruvboxRed
-" hi! link CocCodeLens GruvboxGray
-
-" call s:HL('CocErrorHighlight', s:colors.none, s:colors.none, s:colors.undercurl, s:colors.red)
-" call s:HL('CocWarningHighlight', s:colors.none, s:colors.none, s:colors.undercurl, s:colors.orange)
-" call s:HL('CocInfoHighlight', s:colors.none, s:colors.none, s:colors.undercurl, s:colors.yellow)
-" call s:HL('CocHintHighlight', s:colors.none, s:colors.none, s:colors.undercurl, s:colors.blue)
 " ====================================================
 
 " ====================================================

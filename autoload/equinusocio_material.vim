@@ -8,7 +8,7 @@
 " base color
 let s:colors = {}
 " ===================================================================
-let s:style = get(g:, 'equinusocio_material_style', 'default')
+let s:style = get(g:, 'equinusocio_material_style', 'darker')
 
 if get(g:, 'equinusocio_material_darker', 0) == 1
   let s:style = 'darker'
